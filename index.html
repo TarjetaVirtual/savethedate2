@@ -500,7 +500,7 @@ botonMusica.addEventListener("click", async () => {
   if (musica.paused) {
     try {
       await musica.play();
-      botonMusica.textContent = "♫ Pausar música";
+      botonMusica.textContent = "♫";
       botonMusica.setAttribute("aria-label", "Pausar música");
     } catch (error) {
       botonMusica.textContent = "No se pudo reproducir";
